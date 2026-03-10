@@ -1,0 +1,196 @@
+body.perfis-body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f171e;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+    position: relative;
+    overflow: hidden;
+}
+
+.perfis-body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease-in-out;
+}
+
+body.perfis-body > * {
+    position: relative;
+    z-index: 1;
+}
+
+.perfis-body:has(.perfil1:hover)::before {
+    opacity: 1;
+    background-image: linear-gradient(rgba(15, 23, 30, 0.55), rgba(15, 23, 30, 0.55)), url("img/gi-background.jpg");
+}
+
+.perfis-body:has(.perfil2:hover)::before {
+    opacity: 1;
+    background-image: linear-gradient(rgba(15, 23, 30, 0.55), rgba(15, 23, 30, 0.55)), url("img/ricardo-background.jpg");
+}
+
+.perfis-body:has(.perfil3:hover)::before {
+    opacity: 1;
+    background-image: linear-gradient(rgba(15, 23, 30, 0.55), rgba(15, 23, 30, 0.55)), url("img/davi-background.jpg");
+}
+
+.perfis-body:has(.perfil4:hover)::before {
+    opacity: 1;
+    background-image: linear-gradient(rgba(15, 23, 30, 0.55), rgba(15, 23, 30, 0.55)), url("img/tutu-background.jpg");
+}
+
+.perfis-body:has(.perfil5:hover)::before {
+    opacity: 1;
+    background-image: linear-gradient(rgba(15, 23, 30, 0.55), rgba(15, 23, 30, 0.55)), url("img/murilo-background.jpg");
+}
+
+.perfis-body:has(.perfil6:hover)::before {
+    opacity: 1;
+    background-image: linear-gradient(rgba(15, 23, 30, 0.55), rgba(15, 23, 30, 0.55)), url("img/kevin-background.jpg");
+}
+
+.perfis-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.titulo-perfis {
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
+
+.lista-perfis {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 64px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.perfil-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #9ca3af; 
+    transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.perfil-item:hover {
+    color: #ffffff;
+    transform: scale(1.05); 
+}
+
+.perfil-item:hover .avatar-conjunto {
+    border-color: #ffffff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.avatar-conjunto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 3px solid transparent;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.25s ease-in-out;
+    background-color: #1a202c;
+}
+
+.avatar-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar1:hover {
+    background-image: url("");
+}
+
+.avatar2:hover {
+    background-image: url("");
+}
+
+.avatar3:hover {
+    background-image: url("");
+}
+
+.avatar4:hover {
+    background-image: url("");
+}
+
+.avatar5:hover {
+    background-image: url("");
+}
+
+.avatar6:hover {
+    background-image: url("");
+}
+
+.nome-perfil {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icone-adicionar {
+    background-color: transparent;
+    border: 2px solid #9ca3af; 
+    color: #9ca3af; 
+}
+
+.perfil-item:hover .icone-adicionar {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #0f171e; 
+}
+
+.botao-gerenciar {
+    background-color: transparent;
+    border: 1px solid #9ca3af;
+    color: #9ca3af;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px; 
+    cursor: pointer;
+}
+
+.botao-gerenciar:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sinal-mais {
+    font-size: 48px;
+    font-weight: 600;
+    color: #5b5d5f;
+}
