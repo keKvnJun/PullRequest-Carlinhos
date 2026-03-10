@@ -33,6 +33,15 @@ header p{
     opacity: 0.9;
 }
 
+.seta-preta {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 34px;
+    color: white;
+    text-decoration: none;
+}
+
 main{
     flex: 1;
     width: 90%;
