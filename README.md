@@ -3,12 +3,12 @@
 <br>
 
 ## Índice
-- [Sobre](#-sobre)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Funcionalidades](#-funcionalidades)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Licença](#-licença)
-- [Autores](#-autores)
+- [Sobre](#sobre---lugares-que-queremos-conhecer)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Licença](#licença)
+- [Autores](#autores)
 
 <br>
 
